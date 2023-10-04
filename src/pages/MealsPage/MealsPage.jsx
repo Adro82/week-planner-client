@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap'
-import MealsList from '../../components/MealsList/MealsLis'
+import MealsList from '../../components/MealsList/MealsList'
 
 
 const MealsListPage = () => {

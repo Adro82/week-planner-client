@@ -12,11 +12,17 @@ const Navigation = () => {
                         <Link to="/">
                             <Nav.Link as="span">Inicio</Nav.Link>
                         </Link>
-                        <Link to="/galeria">
+                        <Link to="/comidas">
                             <Nav.Link as="span">Comidas</Nav.Link>
+                        </Link>
+                        <Link to="/recetas">
+                            <Nav.Link as="span">Recetas</Nav.Link>
                         </Link>
                         <Link to="/crear">
                             <Nav.Link as="span">Crear comida</Nav.Link>
+                        </Link>
+                        <Link to="/crear/receta">
+                            <Nav.Link as="span">Crear Receta </Nav.Link>
                         </Link>
                     </Nav>
                 </Navbar.Collapse>

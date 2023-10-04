@@ -2,15 +2,17 @@ import { Button, Card } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 
-function MealCard({ nombre, tipo, imageUrl, _id }) {
+function RecipeCard({ nombre, tipo, ingredientes, pasos, imageUrl, _id, owner }) {
 
     return (
-        <Link to={`/comidas/${_id}`}>
+        <Link to={`/recetas/${_id}`}>
             <Card>
                 <Card.Img variant="top" src={imageUrl}></Card.Img>
                 <Card.Body>
                     <Card.Title>{nombre}</Card.Title>
                     <Card.Text>{tipo}</Card.Text>
+                    <Card.Text>{ingredientes}</Card.Text>
+                    <Card.Text>{pasos}</Card.Text>
                     <Button variant="dark">Detalles</Button>
                 </Card.Body>
 
@@ -19,4 +21,4 @@ function MealCard({ nombre, tipo, imageUrl, _id }) {
     )
 }
 
-export default MealCard
+export default RecipeCard
